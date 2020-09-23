@@ -1,3 +1,10 @@
+@import url("https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css");
+
+pre, code {
+  font-family: "Fira Code", Consolas, Inconsolata, monospace;
+}
+
+
 .rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
