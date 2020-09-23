@@ -10,8 +10,8 @@
 
   <meta property="og:title" content="Preface | ds4da Cookbook" />
   <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://knapply.github.io/ds4da-cookbook/" />
   
-  <meta property="og:image" content="images/cover.png" />
   <meta property="og:description" content="A Cookbook" />
   <meta name="github-repo" content="knapply/ds4da-cookbook" />
 
@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="Preface | ds4da Cookbook" />
   
   <meta name="twitter:description" content="A Cookbook" />
-  <meta name="twitter:image" content="images/cover.png" />
+  
 
 <meta name="author" content="Brendan Knapp and Christopher Callaghan" />
 
@@ -145,12 +145,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.1" data-path="setup-r-and-rstudio.html"><a href="setup-r-and-rstudio.html#installation-1"><i class="fa fa-check"></i><b>1.2.1</b> Installation</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>II Foundation</b></span></li>
-<li class="chapter" data-level="2" data-path="foundation-io.html"><a href="foundation-io.html"><i class="fa fa-check"></i><b>2</b> I/O</a><ul>
-<li class="chapter" data-level="2.1" data-path="foundation-io.html"><a href="foundation-io.html#input-reading-data"><i class="fa fa-check"></i><b>2.1</b> Input: Reading Data</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="foundation-io.html"><a href="foundation-io.html#base"><i class="fa fa-check"></i><b>2.1.1</b> Base</a></li>
-<li class="chapter" data-level="2.1.2" data-path="foundation-io.html"><a href="foundation-io.html#tidy"><i class="fa fa-check"></i><b>2.1.2</b> Tidy</a></li>
-<li class="chapter" data-level="2.1.3" data-path="foundation-io.html"><a href="foundation-io.html#data.table"><i class="fa fa-check"></i><b>2.1.3</b> <code>{data.table}</code></a></li>
+<li class="part"><span><b>II Reading and Writing Data</b></span></li>
+<li class="chapter" data-level="2" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>2</b> Tabular Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="tabular-data.html"><a href="tabular-data.html#example-data"><i class="fa fa-check"></i><b>2.1</b> Example Data</a></li>
+<li class="chapter" data-level="2.2" data-path="tabular-data.html"><a href="tabular-data.html#input-reading-data"><i class="fa fa-check"></i><b>2.2</b> Input: Reading Data</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="tabular-data.html"><a href="tabular-data.html#default"><i class="fa fa-check"></i><b>2.2.1</b> Default</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -205,10 +204,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
-"linkedin": false,
+"linkedin": true,
 "weibo": false,
 "instapaper": false,
 "vk": false,
@@ -231,10 +230,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": [["ds4da-cookbook.pdf", "PDF"]],
 "toc": {
 "collapse": "section"
-}
+},
+"info": true
 });
 });
 </script>

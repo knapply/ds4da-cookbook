@@ -1,3 +1,6 @@
+book_filename: "ds4da-cookbook.Rmd"
+repo: https://github.com/knapply/ds4da-cookbook
+clean: [packages.bib, bookdown.bbl]
 new_session: yes
 output_dir: "docs"
 delete_merged_file: true
@@ -10,6 +13,6 @@ rmd_files: [
   "1-setup.Rmd",
   "1-setup-r-and-rstudio.Rmd",
 
-  "2-foundation.Rmd",
-  "2-foundation-io.Rmd"
+  "2.Rmd",
+  "2-tabular-data.Rmd"
 ]
