@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Data Science for Defense Analysis Cookbook</a></li>
+        <li><a href="./">ds4da Cookbook</a></li>
       after: |
         <li><a href="https://github.com/knapply/ds4da-cookbook" target="blank">Published with bookdown</a></li>
     edit:
