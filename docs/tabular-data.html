@@ -245,7 +245,7 @@ Afghanistan,,,N/A,,                                # notice that we&#39;re missi
 ## 9 Afghanistan &lt;NA&gt;         NA N/A           NA       NA</code></pre>
 <div id="diagnose-problems" class="section level4">
 <h4><span class="header-section-number">2.2.1.1</span> Diagnose Problems</h4>
-<p>Notice that our <code>year</code> column says <code>&lt;dbl&gt;</code>, referring it being of type <code>double</code>, yet all of our <code>year</code> values are whole numbers.</p>
+<p>Notice that our <code>year</code> column says <code>&lt;dbl&gt;</code>, referring to it being of type <code>double</code>, yet all of our <code>year</code> values are whole numbers.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="tabular-data.html#cb9-1"></a><span class="kw">typeof</span>(data_frame_from_csv<span class="op">$</span>year)</span></code></pre></div>
 <pre><code>## [1] &quot;double&quot;</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="tabular-data.html#cb11-1"></a>data_frame_from_csv<span class="op">$</span>year</span></code></pre></div>
@@ -269,7 +269,7 @@ Afghanistan,,,N/A,,                                # notice that we&#39;re missi
 <span id="cb17-8"><a href="tabular-data.html#cb17-8"></a>    <span class="dt">pop =</span> <span class="kw">col_double</span>(),</span>
 <span id="cb17-9"><a href="tabular-data.html#cb17-9"></a>    <span class="dt">gdpPercap =</span> <span class="kw">col_double</span>()</span>
 <span id="cb17-10"><a href="tabular-data.html#cb17-10"></a>  ),</span>
-<span id="cb17-11"><a href="tabular-data.html#cb17-11"></a>  <span class="dt">na =</span> <span class="kw">c</span>(<span class="st">&quot;&quot;</span>, <span class="st">&quot;N/A&quot;</span>)              <span class="co"># be explicit about how missing values may be represented</span></span>
+<span id="cb17-11"><a href="tabular-data.html#cb17-11"></a>  <span class="dt">na =</span> <span class="kw">c</span>(<span class="st">&quot;&quot;</span>, <span class="st">&quot;N/A&quot;</span>)              <span class="co"># be explicit about how `csv_file` represents missing values</span></span>
 <span id="cb17-12"><a href="tabular-data.html#cb17-12"></a>)</span></code></pre></div>
 <pre><code>## # A tibble: 9 x 6
 ##   country     continent  year lifeExp      pop gdpPercap

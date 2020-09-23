@@ -98,7 +98,7 @@ data_frame_from_csv
 
 #### Diagnose Problems
 
-Notice that our `year` column says `<dbl>`, referring it being of type `double`, yet all of our `year` values are whole numbers.
+Notice that our `year` column says `<dbl>`, referring to it being of type `double`, yet all of our `year` values are whole numbers.
 
 
 ```r
@@ -151,7 +151,7 @@ read_csv(
     pop = col_double(),
     gdpPercap = col_double()
   ),
-  na = c("", "N/A")              # be explicit about how missing values may be represented
+  na = c("", "N/A")              # be explicit about how `csv_file` represents missing values
 )
 ```
 
