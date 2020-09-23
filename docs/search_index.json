@@ -1,4 +1,6 @@
 [
 ["index.html", "ds4da Cookbook Welcome", " ds4da Cookbook Brendan Knapp and Christopher Callaghan 2020-09-23 Welcome Test "],
-["preface.html", "Preface", " Preface init "]
+["preface.html", "Preface", " Preface init "],
+["setup-r-and-rstudio.html", "1 R and RStudio 1.1 R 1.2 RStudio", " 1 R and RStudio 1.1 R 1.1.1 Installation https://cran.r-project.org/ 1.2 RStudio 1.2.1 Installation https://rstudio.com/products/rstudio/download/ "],
+["foundation-io.html", "2 I/O", " 2 I/O "]
 ]

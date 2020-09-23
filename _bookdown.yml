@@ -7,5 +7,9 @@ rmd_files: [
 
   "preface.Rmd",
 
-  "setup.Rmd"
+  "1-setup.Rmd",
+  "1-setup-r-and-rstudio.Rmd",
+
+  "2-foundation.Rmd",
+  "2-foundation-io.Rmd"
 ]
