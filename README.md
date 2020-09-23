@@ -1,4 +1,4 @@
-# ds4da
+# ds4da-cookbook
 
 ```r
 if (!requireNamespace("bookdown", quietly = TRUE)) install.packages("bookdown")

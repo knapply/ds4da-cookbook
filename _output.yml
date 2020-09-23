@@ -6,7 +6,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Data Science for Defense Analysis Cookbook</a></li>
       after: |
-        <li><a href="https://github.com/knapply/ds4da" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/knapply/ds4da-cookbook" target="blank">Published with bookdown</a></li>
     edit:
       link: https://github.com/knapply/ds4da-cookbook/edit/master/%s
   # includes:
