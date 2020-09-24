@@ -2,7 +2,7 @@
 title: "ds4da Cookbook"
 subtitle: "Recipes for Success"
 author: "Brendan Knapp and Christopher Callaghan"
-date: "2020-09-23"
+date: "2020-09-24"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
