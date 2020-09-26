@@ -5,8 +5,9 @@ editor_options:
 ---
 
 
-
-
+```{r, echo=FALSE}
+options(width = 110)
+```
 
 
 # Tabular Data {#tabular-data}
@@ -189,131 +190,5 @@ read_csv(
   na = c("", "N/A")              # be explicit about how `csv_file` represents missing values
 )
 ```
-
-
-
-## Alternatives
-
-```{css, echo=FALSE}
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-```
-
-
-<div class="tab">
-  <button class="tablinks" 
-          onclick="open_context(event, 'Minimalist')" 
-          id ="defaultOpen">Minimalist</button>
-  <button class="tablinks" 
-          onclick="open_context(event, 'Advanced')">Advanced</button>
-</div>
-
-
-
-
-<div id="Minimalist" class="tabcontent">
-
-```{r}
-base_r <- read.csv(
-  file = csv_file,
-  na.strings = c("", "N/A")
-)
-
-base_r
-str(base_r)
-
-
-base_r <- read.csv(
-  file = csv_file,
-  colClasses = c(
-    country = "character",
-    continent = "character",
-    year = "integer",
-    lifeExp = "double",
-    pop = "double",
-    gdpPercap = "double"
-  ),
-  na.strings = c("", "N/A")
-)
-
-base_r
-str(base_r)
-```
-
-</div>
-
-
-
-
-<div id="Advanced" class="tabcontent">
-
-```{r}
-options(datatable.print.class = TRUE)
-
-data.table::fread(
-  file = csv_file,
-  na.strings = c("", "N/A")
-)
-```
-
-</div>
-
-
-
-
-<script>
-function open_context(evt, context) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(context).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
-</script>
-
-
-
 
 

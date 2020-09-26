@@ -14,5 +14,8 @@ rmd_files: [
   "1-setup-r-and-rstudio.Rmd",
 
   "2.Rmd",
-  "2-tabular-data.Rmd"
+  "2-tabular-data.Rmd",
+
+  "3.Rmd",
+  "3-thesaurus.Rmd"
 ]
